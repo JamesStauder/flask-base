@@ -4,14 +4,22 @@
     <div class="ui text container">
       <h1>Hello {% if not (current_user.is_authenticated) %} world {% else %} {{ current_user.full_name() }} {% endif %},</h1>
 
-        <p>This is <a href="http://hack4impact.org">Hack4Impact</a>'s web application template. We'll use this as a
-        foundation for each of our <a href="http://flask.pocoo.org">Flask</a> projects. The goal is to reduce the work
+        <p>This is <a href="https://github.com/JamesStauder/flask-base">a web application template</a>. I will use this as a
+        foundation for <a href="http://flask.pocoo.org">Flask</a> projects. The goal is to reduce the work
         necessary to get a new project off the ground, by providing boilerplate code (such as account management
-        facilities), as well as uncontroversial and extensible defaults. We have integrated an
+        facilities), as well as uncontroversial and extensible defaults. I have integrated an
         <a href="http://sass-lang.com">SCSS</a>-based asset pipeline based around a (fantastic!) framework
         called <a href="http://semantic-ui.com">Semantic UI</a>. Much of this code is appropriated from the examples
         in Miguel Grinberg's book, <a href="http://flaskbook.com"><em>Flask Web Development</em></a>.</p>
+	
+	<p>This will also be the starting point for the Greenland Profile Modeling Tool that is to be developed
+	for the Qualitative Study of Snow and Ice lab at the University of Montana under the guidance of Dr.
+	Jesse Johnson.</p> 
+	
+	
+	<p>The initial flask base was cloned from 
+	<a href="https://github.com/hack4impact/flask-base">Hack 4 impacts Flask base</a>.</p>
 
-        <p>{{ lipsum(6) }}</p>
+        
     </div>
 {% endblock %}
